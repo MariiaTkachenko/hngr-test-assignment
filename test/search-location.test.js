@@ -14,6 +14,7 @@ const fullLocation = location + ', USA';
 test.before(async t => {
   t.context.driver = await new Builder().forBrowser('chrome').setChromeOptions(
     new chrome.Options()
+      .addArguments([ '--no-sandbox' ])
       .headless()
       .windowSize({width, height}))
       .build();
