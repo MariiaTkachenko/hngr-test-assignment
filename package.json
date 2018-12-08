@@ -5,8 +5,14 @@
   "author": "Mariia Tkachenko",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "test": "ava"
+  },
   "dependencies": {
     "chromedriver": "^2.44.1",
     "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "ava": "1.0.0-rc.2"
   }
 }
